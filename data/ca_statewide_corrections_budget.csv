@@ -1,0 +1,47 @@
+fiscal_year,corrections_budget_nominal_dollars,total_state_budget_all_funds_nominal_dollars,total_general_fund_expenditures,corrections_pct_of_general_fund,data_quality,source_notes,adult_operations_expenditures,parole_operations_expenditures,board_parole_hearings_expenditures,total_parole_expenditures,rehabilitative_programs_expenditures,budget_program_source
+1980-81,604200000,24500000000,20871800000,2.9,reported,Cal Budget Center 'Steady Climb',,,,,,
+1981-82,463100000,25000000000,21445300000,2.2,reported,LAO 1983-84 Budget Analysis; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1982-83,511100000,26700000000,23202900000,2.2,derived,"LAO 1982-83 Budget Analysis (pandi_82): CDC proposed +$48M over 1981-82; GF total from Table 7; all-funds from p.A-7",,,,,,
+1983-84,658700000,26800000000,22575200000,3.7,reported,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb',,,,,,
+1984-85,851525000,31000000000,25466400000,3.3,interpolated,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb'; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1985-86,1044350000,35000000000,28570900000,3.7,interpolated,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb'; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1986-87,1237175000,38100000000,31227200000,4.0,interpolated,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb'; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1987-88,1430000000,40500000000,32751800000,4.4,reported,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb'; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1988-89,1651000000,44600000000,35763700000,4.6,reported,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb'; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1989-90,1967333333,48600000000,39455900000,5.0,interpolated,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb'; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1990-91,2283666667,51400000000,40263600000,6.7,interpolated,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb',,,,,,
+1991-92,2600000000,55700000000,43327000000,6.0,reported,LAO 1983-84 Budget Analysis; Cal Budget Center 'Steady Climb'; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1992-93,2365900000,57000000000,40948300000,5.8,reported,"LAO 1994-95 Budget Analysis (criminal_justice_anl94.pdf), Figure 2 - CDC General Fund",,,,,,
+1993-94,2723300000,52100000000,38957900000,7.0,reported,"LAO 1994-95 Budget Analysis (criminal_justice_anl94.pdf), Figure 2 - CDC General Fund",,,,,,
+1994-95,3080000000,57500000000,41961500000,7.3,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1995-96,3500000000,56800000000,45393100000,7.7,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1996-97,3600000000,61500000000,49088100000,7.3,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1997-98,3700000000,67200000000,52874400000,7.0,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1998-99,3900000000,71900000000,57827100000,6.7,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+1999-00,4200000000,81300000000,66494000000,6.3,reported,LAO 1999-00 Budget Analysis: $4.2B total; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2000-01,4400000000,99400000000,78052900000,5.6,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2001-02,4600000000,103300000000,76751700000,6.0,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2002-03,4800000000,98900000000,77482100000,6.2,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2003-04,5300000000,98900000000,78345200000,6.8,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2004-05,5300000000,105300000000,79804000000,6.6,reported,LAO Budget Analysis; Governor's Budget proposals; GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2005-06,7700000000,117300000000,91591500000,8.4,reported,LAO Budget Analysis; Cal Budget Center Issue Brief (Nov 2015); GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2006-07,8100000000,131400000000,101413000000,9.0,reported,LAO Budget Analysis; Cal Budget Center Issue Brief (Nov 2015),,,,,,
+2007-08,9800000000,146500000000,102985700000,7.8,reported,LAO Budget Analysis; Cal Budget Center Issue Brief (Nov 2015),,,,,,
+2008-09,10100000000,144500000000,90940400000,11.1,reported,LAO Budget Analysis; Cal Budget Center Issue Brief (Nov 2015); GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2009-10,9200000000,119200000000,87236700000,10.5,reported,LAO Budget Analysis; Cal Budget Center Issue Brief (Nov 2015); GF total from DOF Chart A / LAO Cal Facts,,,,,,
+2010-11,9700000000,125300000000,,10.3,reported,Cal Budget Center 'Steady Climb': $9.6B; correctional-spending report: $9.7B (all funds),,,,,,
+2011-12,9200000000,129500000000,,10.8,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,5138308000,666523000,85439000,751962000,305284000,2013-14 (prior_actual)
+2012-13,8700000000,142400000000,,9.4,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,4975350000,539504000,56770000,596274000,322876000,2014-15 (prior_actual)
+2013-14,8800000000,145300000000,,9.0,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,5286352000,457800000,37414000,495214000,377623000,2015-16 (prior_actual)
+2014-15,9600000000,156400000000,,9.0,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,6151354000,450619000,36755000,487374000,382450000,2016-17 (prior_actual)
+2015-16,10100000000,167600000000,,8.7,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,6193849000,535438000,40239000,575677000,328337000,2017-18 (prior_actual)
+2016-17,10600000000,170900000000,,8.6,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,6504970000,548034000,44726000,592760000,399300000,2018-19 (prior_actual)
+2017-18,11200000000,183300000000,,9.0,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,6815889000,611992000,47961000,659953000,427657000,2019-20 (prior_actual)
+2018-19,12100000000,201400000000,,8.7,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,7136130000,658511000,50579000,709090000,441013000,2020-21 (prior_actual)
+2019-20,13300000000,214800000000,,8.6,reported,Cal Budget Center Fact Sheet (Apr 2019): $12.7B; correctional-spending report: $13.3B (all funds),7458847000,695878000,62331000,758209000,472528000,2021-22 (prior_actual)
+2020-21,13400000000,133900000000,,10.0,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,6859624000,653932000,55995000,709927000,454324000,2022-23 (prior_actual)
+2021-22,13900000000,196440000000,,7.1,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,7470027000,675823000,67019000,742842000,535511000,2023-24 (prior_actual)
+2022-23,14700000000,234366000000,,6.3,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures,7892443000,695829000,69672000,765501000,593418000,2024-25 (prior_actual)
+2023-24,14800000000,311000000000,,6.5,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures; state budget from 2023-24 Budget Act,8011023000,702991000,74598000,777589000,634413000,2025-26 (prior_actual)
+2024-25,14200000000,297900000000,,6.7,reported,CDCR GF expenditures (cdcr_budgets dataset); % = CDCR GF / total GF expenditures; state budget from 2024-25 Budget Act,7400404000,695436000,73045000,768481000,736755000,2025-26 (current_est)
+2025-26,13500000000,322200000000,,6.0,reported,Governor's Budget 2025-26 ($13.5B GF); LAO 2026 Handout (~6% of GF); state budget from Governor's 2025-26 Budget Proposal,7377761000,729387000,73662000,803049000,628291000,2025-26 (budget_proposed)

@@ -1,3 +1,9 @@
+# Ignore folders of large pdfs
+data_sources/
+
+# Exclude raw expenditures data (too large, not needed in repo)
+data/ca_county_expenditures_raw.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
