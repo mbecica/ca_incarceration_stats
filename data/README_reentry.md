@@ -20,7 +20,6 @@ This file documents statewide state-funded re-entry programming streams from FY 
 | `returning_home_well` | Returning Home Well program state funding |
 | `bscc_prop47_grants` | BSCC Prop 47 grant cohort total for that fiscal year |
 | `bscc_prop47_cohort` | Prop 47 cohort number |
-| `dapo_reentry_contracts` | DAPO baseline reentry service contracts |
 | `sco_prcs_county_allocations` | State Controller's Office PRCS county allocation payments (statewide total) |
 | `cdcr_rehabilitative_programs` | CDCR Division of Rehabilitative Programs budget |
 | `total_state_reentry_funding` | Sum of all state reentry funding streams (not yet calculated — too many gaps) |
@@ -57,9 +56,9 @@ Prop 47 (2014) reclassified certain felonies as misdemeanors, generating state p
 
 Source: BSCC Prop 47 Grant Program page (https://www.bscc.ca.gov/s_bsccprop47/).
 
-### DAPO Reentry Contracts
+### DAPO Community-Based Program Spending
 
-CDCR's Division of Adult Parole Operations contracts with community providers for reentry services. The 2025–26 Governor's Budget proposes $32M (growing to $42.9M by 2029–30) to increase rates for 14 parole reentry contracts. Baseline amounts for prior years have not yet been researched.
+DAPO community-based reentry program spending is not tracked as a separate column in this file. It is captured within the `parole_operations_expenditures` column in `ca_statewide_corrections_budget.csv`, which includes Adult Community Based Programs (program code 4560) as a sub-component of Parole Operations.
 
 ### SCO PRCS County Allocations
 
@@ -75,8 +74,6 @@ CDCR Division of Rehabilitative Programs budget. Merged from `ca_statewide_corre
 
 ## Known Gaps
 
-- DAPO reentry contract baseline for all years prior to 2025–26
-- No data for FY 2000–01 through 2015–16 (no dedicated state reentry funding streams identified before Prop 47)
 - Does not include county Realignment allocations, federal grants (Second Chance Act), or private philanthropy
 - `total_state_reentry_funding` column not yet calculated due to the number of gaps
 

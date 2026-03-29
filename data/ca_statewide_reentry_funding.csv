@@ -1,27 +1,27 @@
-fiscal_year,bscc_adult_reentry_grant,bscc_arg_cohort,returning_home_well,bscc_prop47_grants,bscc_prop47_cohort,dapo_reentry_contracts,sco_prcs_county_allocations,cdcr_rehabilitative_programs,total_state_reentry_funding,notes,source
-2000-01,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2001-02,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2002-03,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2003-04,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2004-05,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2005-06,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2006-07,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2007-08,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2008-09,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2009-10,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2010-11,,,,,,,,,,No dedicated state reentry funding streams identified for this period,
-2011-12,,,,,,,,305284000,,AB 109 Realignment begins Oct 2011; reentry funding shifts to counties via Realignment allocations,
-2012-13,,,,,,,,322876000,,Realignment ongoing; no separate state reentry grant program yet,
-2013-14,,,,,,,,377623000,,Realignment ongoing; no separate state reentry grant program yet,
-2014-15,,,,,,,,382450000,,Prop 47 passed Nov 2014; savings begin accruing but first transfer not until 2016-17,
-2015-16,,,,,,,,328337000,,Prop 47 savings accruing; first BSCC Prop 47 grants issued 2016-17,
-2016-17,,,,103000000,Cohort 1,,,399300000,,BSCC Prop 47 Cohort 1; $103M available per BSCC RFP,BSCC Prop 47 Cohort 1 RFP
-2017-18,,,,,,,15385250,427657000,,"PRCS county allocations: SCO Item 5227-106-0001; BSCC Prop 47 Cohort 1 grants disbursing",SCO Post Release Community Supervision payments
-2018-19,65700000,Cohort 1,,,,,28177000,441013000,,ARG established by Budget Act of 2018 (SB 840); $65.7M for Rental Assistance + Warm Handoff + $5M Amity + $15M Rehab; PRCS county allocations: SCO Item 5227-106-0001,BSCC ARG program page; Budget Act of 2018; SCO Post Release Community Supervision payments
-2019-20,,,,96000000,Cohort 2,,17772219,472528000,,"ARG Cohort 1 grants disbursing; BSCC Prop 47 Cohort 2 cycle begins August 2019; PRCS county allocations: SCO Item 5227-106-0001 + COVID supplement (Non Budget Item 5227-604-0001)",BSCC Prop 47 Cohort 2 RFP; SCO Post Release Community Supervision payments
-2020-21,37000000,Cohort 2,15000000,,,,12935500,454324000,,"ARG Cohort 2 (AB 89); RHW initial $15M state commitment (COVID response, matched by philanthropy); PRCS county allocations: SCO Item 5227-106-0001",BSCC ARG FAQ; Amity Foundation; CZ Initiative; SCO Post Release Community Supervision payments
-2021-22,67000000,Cohort 3,,,,,23564750,535511000,,ARG Cohort 3 (AB 128); $31.825M Rental Assistance + $31.825M Warm Handoff; PRCS county allocations: SCO Item 5227-106-0001,BSCC ARG Cohort III RFP; SCO Post Release Community Supervision payments
-2022-23,,,10600000,124907667,Cohort 3,,20930500,593418000,,"RHW: $10.6M/yr for 3 years per 2022 Budget Act; BSCC Prop 47 Cohort 3 cycle begins September 2022; $143,436,700 available, $124,907,667 funded to 24 grantees; PRCS county allocations: SCO Item 5227-106-0001",CalHHS budget highlights; BSCC Prop 47 Cohort 3 RFP; SCO Post Release Community Supervision payments
-2023-24,57000000,Cohort 4 (yr 1),10600000,,,,9317000,634413000,,ARG Cohort 4 yr 1 (AB 102); RHW continuing; PRCS county allocations: SCO Item 5227-106-0001,BSCC ARG Cohort 4 RFP; grants.ca.gov; SCO Post Release Community Supervision payments
-2024-25,57000000,Cohort 4 (yr 2),10600000,167044387,Cohort 4,,,736755000,,ARG Cohort 4 yr 2 (AB 107); RHW final year of 3-year appropriation; BSCC Prop 47 Cohort 4 cycle begins October 3 2024,BSCC news release Nov 2024; BSCC Prop 47 Cohort 4 RFP
-2025-26,,,12900000,128000000,Cohort 5,32000000,,628291000,,"RHW: $12.9M one-time (proposed); BSCC Prop 47 Cohort 5 cycle begins October 2025; $127M available per RFP, $128M total approved April 10 2025; DAPO reentry contracts: $32M (proposed, growing to $42.9M by 2029-30)",Governor's Budget 2025-26; BSCC Prop 47 Cohort 5 RFP
+fiscal_year,bscc_adult_reentry_grant,bscc_arg_cohort,returning_home_well,bscc_prop47_grants,bscc_prop47_cohort,sco_prcs_county_allocations,cdcr_rehabilitative_programs,total_state_reentry_funding,notes,source
+2000-01,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2001-02,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2002-03,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2003-04,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2004-05,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2005-06,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2006-07,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2007-08,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2008-09,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2009-10,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2010-11,,,,,,,,,No dedicated state reentry funding streams identified for this period,
+2011-12,,,,,,,305284000,,AB 109 Realignment begins Oct 2011; reentry funding shifts to counties via Realignment allocations,
+2012-13,,,,,,,322876000,,Realignment ongoing; no separate state reentry grant program yet,
+2013-14,,,,,,,377623000,,Realignment ongoing; no separate state reentry grant program yet,
+2014-15,,,,,,,382450000,,Prop 47 passed Nov 2014; savings begin accruing but first transfer not until 2016-17,
+2015-16,,,,,,,328337000,,Prop 47 savings accruing; first BSCC Prop 47 grants issued 2016-17,
+2016-17,,,,103000000,Cohort 1,,399300000,,BSCC Prop 47 Cohort 1; $103M available per BSCC RFP,BSCC Prop 47 Cohort 1 RFP
+2017-18,,,,,,15385250,427657000,,PRCS county allocations: SCO Item 5227-106-0001; BSCC Prop 47 Cohort 1 grants disbursing,SCO Post Release Community Supervision payments
+2018-19,65700000,Cohort 1,,,,28177000,441013000,,ARG established by Budget Act of 2018 (SB 840); $65.7M for Rental Assistance + Warm Handoff + $5M Amity + $15M Rehab; PRCS county allocations: SCO Item 5227-106-0001,BSCC ARG program page; Budget Act of 2018; SCO Post Release Community Supervision payments
+2019-20,,,,96000000,Cohort 2,17772219,472528000,,ARG Cohort 1 grants disbursing; BSCC Prop 47 Cohort 2 cycle begins August 2019; PRCS county allocations: SCO Item 5227-106-0001 + COVID supplement (Non Budget Item 5227-604-0001),BSCC Prop 47 Cohort 2 RFP; SCO Post Release Community Supervision payments
+2020-21,37000000,Cohort 2,15000000,,,12935500,454324000,,"ARG Cohort 2 (AB 89); RHW initial $15M state commitment (COVID response, matched by philanthropy); PRCS county allocations: SCO Item 5227-106-0001",BSCC ARG FAQ; Amity Foundation; CZ Initiative; SCO Post Release Community Supervision payments
+2021-22,67000000,Cohort 3,,,,23564750,535511000,,ARG Cohort 3 (AB 128); $31.825M Rental Assistance + $31.825M Warm Handoff; PRCS county allocations: SCO Item 5227-106-0001,BSCC ARG Cohort III RFP; SCO Post Release Community Supervision payments
+2022-23,,,10600000,124907667,Cohort 3,20930500,593418000,,"RHW: $10.6M/yr for 3 years per 2022 Budget Act; BSCC Prop 47 Cohort 3 cycle begins September 2022; $143,436,700 available, $124,907,667 funded to 24 grantees; PRCS county allocations: SCO Item 5227-106-0001",CalHHS budget highlights; BSCC Prop 47 Cohort 3 RFP; SCO Post Release Community Supervision payments
+2023-24,57000000,Cohort 4 (yr 1),10600000,,,9317000,634413000,,ARG Cohort 4 yr 1 (AB 102); RHW continuing; PRCS county allocations: SCO Item 5227-106-0001,BSCC ARG Cohort 4 RFP; grants.ca.gov; SCO Post Release Community Supervision payments
+2024-25,57000000,Cohort 4 (yr 2),10600000,167044387,Cohort 4,,736755000,,ARG Cohort 4 yr 2 (AB 107); RHW final year of 3-year appropriation; BSCC Prop 47 Cohort 4 cycle begins October 3 2024,BSCC news release Nov 2024; BSCC Prop 47 Cohort 4 RFP
+2025-26,,,12900000,128000000,Cohort 5,,628291000,,"RHW: $12.9M one-time (proposed); BSCC Prop 47 Cohort 5 cycle begins October 2025; $127M available per RFP, $128M total approved April 10 2025",Governor's Budget 2025-26; BSCC Prop 47 Cohort 5 RFP
