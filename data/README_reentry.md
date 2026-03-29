@@ -18,8 +18,8 @@ This file documents statewide state-funded re-entry programming streams from FY 
 | `bscc_adult_reentry_grant` | BSCC Adult Reentry Grant (ARG) appropriation for that fiscal year |
 | `bscc_arg_cohort` | ARG cohort number |
 | `returning_home_well` | Returning Home Well program state funding |
-| `prop47_safe_neighborhoods_schools_fund` | Total Prop 47 savings transferred to the Safe Neighborhoods and Schools Fund |
-| `prop47_bscc_reentry_grants_65pct` | BSCC's 65% share of Prop 47 savings for community reentry grants |
+| `bscc_prop47_grants` | BSCC Prop 47 grant cohort total for that fiscal year |
+| `bscc_prop47_cohort` | Prop 47 cohort number |
 | `dapo_reentry_contracts` | DAPO baseline reentry service contracts |
 | `sco_prcs_county_allocations` | State Controller's Office PRCS county allocation payments (statewide total) |
 | `cdcr_rehabilitative_programs` | CDCR Division of Rehabilitative Programs budget |
@@ -45,9 +45,17 @@ Four cohorts awarded to date:
 
 Established in 2020 as a COVID-19 emergency response, led by Amity Foundation in partnership with CDCR. Initial $15M state commitment in FY 2020–21. The 2022 Budget Act appropriated $10.6M/year for three years (FY 2022–23 through 2024–25). The 2025–26 Governor's Budget proposes $12.9M one-time for two additional years.
 
-### Proposition 47 Safe Neighborhoods and Schools Fund
+### BSCC Proposition 47 Grants
 
-Prop 47 (2014) reclassified certain felonies as misdemeanors, generating state prison savings. Savings are deposited annually into the Safe Neighborhoods and Schools Fund, split 65% BSCC reentry grants / 25% education / 10% victim compensation. First transfer in FY 2016–17 (~$40M total). Grew to ~$160M by FY 2022–23. Cumulative total through 2024 exceeds $800M.
+Prop 47 (2014) reclassified certain felonies as misdemeanors, generating state prison savings deposited into the Safe Neighborhoods and Schools Fund. 65% of those savings flow to BSCC as competitive grants to public agencies for mental health services, substance-use disorder treatment, and diversion programs for people in the criminal justice system. The BSCC awards funding in multi-year cohorts:
+
+- Cohort 1: $103M (FY 2016–17, grant cycle 2017–~2020)
+- Cohort 2: $96M (FY 2019–20, grant cycle August 2019 – May 2023)
+- Cohort 3: $124,907,667 funded of $143,436,700 available (FY 2022–23, grant cycle September 2022 – June 2026)
+- Cohort 4: $167,044,387 (FY 2024–25, grant cycle October 2024 – June 2028)
+- Cohort 5: $128M (FY 2025–26, grant cycle October 2025 – June 2029; RFP approved April 2025)
+
+Source: BSCC Prop 47 Grant Program page (https://www.bscc.ca.gov/s_bsccprop47/).
 
 ### DAPO Reentry Contracts
 
@@ -67,7 +75,6 @@ CDCR Division of Rehabilitative Programs budget. Merged from `ca_statewide_corre
 
 ## Known Gaps
 
-- Prop 47 annual savings for most individual fiscal years (only have FY 2016–17 and 2022–23; intermediate years need DOF annual estimates)
 - DAPO reentry contract baseline for all years prior to 2025–26
 - No data for FY 2000–01 through 2015–16 (no dedicated state reentry funding streams identified before Prop 47)
 - Does not include county Realignment allocations, federal grants (Second Chance Act), or private philanthropy
