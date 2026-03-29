@@ -85,6 +85,17 @@ This directory contains two statewide CSV files covering California prison popul
 | `total_parole_expenditures` | Sum of `parole_operations_expenditures` + `board_parole_hearings_expenditures`. |
 | `rehabilitative_programs_expenditures` | Rehabilitative Programs (all funds). Sum of: Adult Education (4585), Cognitive Behavioral Therapy and Reentry Services (4590), Adult Inmate Activities (4595), Adult Administration (4600). |
 | `budget_program_source` | PDF year and column type used as source (e.g., "2025-26 (prior_actual)"). |
+| `cpi_u` | U.S. CPI-U annual average for the fiscal year (average of start and end calendar year values, 1982–84 = 100). Source: BLS CPIAUCSL series. The 2025 value is estimated. |
+| `corrections_budget_2024_dollars` | `corrections_budget_nominal_dollars` adjusted to 2024 dollars using `cpi_u`. |
+| `total_state_budget_all_funds_2024_dollars` | `total_state_budget_all_funds_nominal_dollars` adjusted to 2024 dollars. |
+| `total_general_fund_2024_dollars` | `total_general_fund_expenditures` adjusted to 2024 dollars. |
+| `adult_operations_2024_dollars` | `adult_operations_expenditures` adjusted to 2024 dollars. |
+| `parole_operations_2024_dollars` | `parole_operations_expenditures` adjusted to 2024 dollars. |
+| `board_parole_hearings_2024_dollars` | `board_parole_hearings_expenditures` adjusted to 2024 dollars. |
+| `total_parole_2024_dollars` | `total_parole_expenditures` adjusted to 2024 dollars. |
+| `rehabilitative_programs_2024_dollars` | `rehabilitative_programs_expenditures` adjusted to 2024 dollars. |
+
+Inflation adjustment formula: `real_value = nominal_value × (CPI_2024 / cpi_u)`, where CPI_2024 = 314.2. The `corrections_pct_of_general_fund` column and its component-level equivalents do not require inflation adjustment since both numerator and denominator are in the same year's dollars.
 
 ### Sources
 
