@@ -109,6 +109,8 @@ Budget data compiled from multiple primary sources:
 
 41 of 46 years use figures reported directly from primary sources. Five years (FY 1984–85 through 1986–87, 1989–90, and 1990–91) use linear interpolation between known anchor points and are flagged `data_quality = "interpolated"`. FY 1982–83 is flagged `data_quality = "derived"`: the LAO 1982–83 Budget Analysis states Department of Corrections expenditures were proposed to increase $48M over 1981–82, giving a derived figure of $511.1M.
 
+**`total_general_fund_expenditures` for FY 2010–11 through 2025–26** was not collected from primary sources and is back-calculated as `corrections_budget_nominal_dollars / (corrections_pct_of_general_fund / 100)`. Because `corrections_pct_of_general_fund` is stored to one decimal place, these derived GF totals carry a rounding error of roughly ±$400–700M. Rows with derived GF values are noted in `source_notes`. Users needing precise GF totals for this period should source them from DOF Chart A or LAO *Cal Facts*.
+
 ### Program-level expenditure columns (FY 2011–12 to 2025–26)
 
 The five program-level columns are extracted from Governor's Budget chapter 5210 PDFs from ebudget.ca.gov. All values are all-funds expenditures. When multiple PDFs report the same fiscal year, values are taken from the most recent PDF where that year appears as a prior-year actual. FY 2024–25 uses current-year estimated and FY 2025–26 uses budget proposal figures.
