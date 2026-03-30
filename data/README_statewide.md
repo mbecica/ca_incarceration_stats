@@ -24,6 +24,8 @@ This directory contains two statewide CSV files covering California prison popul
 | `total_probation` | Sum of felony + misdemeanor probation |
 | `prcs_population` | Post-Release Community Supervision population |
 | `mandatory_supervision` | Mandatory supervision population |
+| `jail_population` | Statewide total county jail population (2000–2024), summed across all reporting counties from `ca_county_incarceration.csv`. Sourced from the California Board of State and Community Corrections (BSCC) Jail Profile Survey. 57 counties report through 2015; 56 counties from 2016–2023; 54 counties in 2024. The 2024 figure is a slight undercount due to missing counties. |
+| `jail_population_source` | Source citation for the jail population figure. |
 
 ### Sources by column
 
