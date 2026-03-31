@@ -13,11 +13,11 @@ This directory contains two statewide CSV files covering California prison popul
 | Column | Description |
 |--------|-------------|
 | `year` | Calendar year |
-| `prison_population` | Total California state prison population (in-custody) |
+| `prison_population` | California state prison population: Institution/Camps + Department of State Hospitals (DSH) beds. Excludes in-state contract beds, out-of-state contract beds, and CRPP placements (tracked separately). |
 | `ca_state_population` | California resident population |
 | `incarceration_rate_per_100k` | `prison_population / ca_state_population × 100,000` |
 | `parole_population` | Total active parolees statewide |
-| `crpp_supervision` | Community Reentry Program Participants supervision |
+| `crpp_supervision` | Community Reentry Program Participants (CRPP) supervision count, December snapshot. Includes Alternative Custody Program, Female/Male Community Reentry Programs, Medical Reprieve Program, and Community Participant Mother Program. Program began mid-2016; data available December 2016–2018 (from CDCR Offender Data Points PDFs) and 2024–2025 (from Tpop1d PDFs). 2019–2023 not yet collected. |
 | `total_cdcr_population` | Total CDCR population (in-custody + parole + CRPP) |
 | `felony_probation` | Statewide felony probation caseload (Dec ending) |
 | `misdemeanor_probation` | Statewide misdemeanor probation caseload (Dec ending) |
@@ -30,8 +30,13 @@ This directory contains two statewide CSV files covering California prison popul
 ### Sources by column
 
 **Prison population (1920–2025):**
-- 1920–2023: CDCR historical records as compiled in Zimring and Hawkins. Measurement timing shifts from June (end of fiscal year) for early decades to December (end of calendar year) for modern data.
-- 2024–2025: CDCR Monthly Total Population Report (Tpop1d series), December 31 snapshots parsed from PDF.
+
+Definition: Institution/Camps + Department of State Hospitals (DSH). Excludes in-state and out-of-state contract beds and CRPP placements. Prior to this correction, years 2015–2024 used the full Section A in-custody total (which included contract beds and CRPP), overstating prison population by roughly 6,000–10,000 depending on year.
+
+- 1920–2014: CDCR historical records as compiled in Zimring and Hawkins. Measurement timing shifts from June (end of fiscal year) for early decades to December (end of calendar year) for modern data. No correction needed; contract/CRPP beds were not separately tracked in this period.
+- 2015–2018: CDCR Offender Data Points PDFs (semi-annual reports). December values extracted from "In-Custody Population (Total Population) Breakout" table: Institution Population + Fire Camp Population + DSH Beds. (2015 data from Dec 2017 report p.74; 2016 from Dec 2017 report p.78; 2017 from Dec 2018 report p.80; 2018 from Dec 2018 report p.123.)
+- 2019–2023: CDCR Monthly Report of Population (Tpop1d series), December 31 snapshots. Institution/Camps + DSH line items.
+- 2024–2025: CDCR Monthly Report of Population (Tpop1d series), December 31 snapshots. Institution/Camps + DSH line items.
 
 **California state population (1920–2025):**
 - Federal Reserve Economic Data (FRED) CAPOP series, sourced from U.S. Census Bureau resident population estimates.
