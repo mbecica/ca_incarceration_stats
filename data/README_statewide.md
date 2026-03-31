@@ -17,7 +17,7 @@ This directory contains two statewide CSV files covering California prison popul
 | `ca_state_population` | California resident population |
 | `incarceration_rate_per_100k` | `prison_population / ca_state_population × 100,000` |
 | `parole_population` | Total active parolees statewide |
-| `crpp_supervision` | Community Reentry Program Participants (CRPP) supervision count, December snapshot. Includes Alternative Custody Program, Female/Male Community Reentry Programs, Medical Reprieve Program, and Community Participant Mother Program. Program began mid-2016; data available December 2016–2018 (from CDCR Offender Data Points PDFs) and 2024–2025 (from Tpop1d PDFs). 2019–2023 not yet collected. |
+| `crpp_supervision` | Community Reentry Program Participants (CRPP) supervision count, December snapshot. Includes Alternative Custody Program, Female/Male Community Reentry Programs, Medical Reprieve Program, and Community Participant Mother Program. Program began mid-2016; data available December 2016–2025 (from CDCR Offender Data Points PDFs for 2016–2018; Tpop1d PDFs for 2019–2025). |
 | `total_cdcr_population` | Total CDCR population (in-custody + parole + CRPP) |
 | `felony_probation` | Statewide felony probation caseload (Dec ending) |
 | `misdemeanor_probation` | Statewide misdemeanor probation caseload (Dec ending) |
@@ -51,8 +51,9 @@ Definition: Institution/Camps + Department of State Hospitals (DSH). Excludes in
 - 2023: CDCR Population Dashboard CSV export, December statewide total.
 - 2024–2025: CDCR Monthly Report of Population (Tpop1d PDFs), December 31 snapshots.
 
-**CRPP supervision (2024–2025):**
-- CDCR Tpop1d PDFs, December 31 snapshots. CRPP includes Alternative Custody Program, Female/Male Community Reentry Programs, Medical Reprieve Program, and Community Participant Mother Program. Pre-2024 values not collected.
+**CRPP supervision (2016–2025):**
+- 2016–2018: CDCR Offender Data Points PDFs (semi-annual reports), December snapshots. CRPP section extracted from "In-Custody Population (Total Population) Breakout" table.
+- 2019–2025: CDCR Monthly Report of Population (Tpop1d PDFs), December 31 snapshots. Section A.4 "CRPP Supervision" line. CRPP includes Alternative Custody Program, Female/Male Community Reentry Programs, Medical Reprieve Program, and Community Participant Mother Program.
 
 **Probation (2003–2024):**
 - California Department of Justice, Criminal Justice Statistics Center (CJSC), Adult Probation Caseload Actions dataset, downloaded from OpenJustice (openjustice.doj.ca.gov). Statewide totals are the sum of all 58 counties' December ending caseloads for felony and misdemeanor probation. Covers traditional probation only — not PRCS or mandatory supervision.
