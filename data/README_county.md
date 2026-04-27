@@ -16,6 +16,8 @@ Vera Institute of Justice, *Incarceration Trends* dataset. Vera data is quarterl
 **Probation by county:**
 California Department of Justice, CJSC Adult Probation Caseload Actions dataset (openjustice.doj.ca.gov). December ending caseloads for all 58 counties, 2003–2024.
 
+*Manual correction:* Yuba County 2016 and 2017 probation populations were originally reported by OpenJustice as 26 and 28 respectively (felony 16 + misdemeanor 10; felony 25 + misdemeanor 3). These appear to be a coding/reporting error: surrounding years are 188 (2015) and 538 (2018). Values have been linearly interpolated between 2015 and 2018: 2016 = 305 (felony 282 + misd 23), 2017 = 421 (felony 384 + misd 37). Statewide totals in `ca_statewide_prison_population.csv` for 2016 and 2017 have been incremented accordingly.
+
 **Budget by county:**
 Merged from `ca_county_totals.csv` (see below). Available for all 58 counties, FY 2002–03 through FY 2023–24. Includes total governmental expenditures, total public protection expenditures, and probation-only expenditures (see `ca_county_totals.csv` section for sourcing details).
 
