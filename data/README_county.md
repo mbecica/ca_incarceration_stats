@@ -17,7 +17,7 @@ Vera Institute of Justice, *Incarceration Trends* dataset. Vera data is quarterl
 California Department of Justice, CJSC Adult Probation Caseload Actions dataset (openjustice.doj.ca.gov). December ending caseloads for all 58 counties, 2003–2024.
 
 **Budget by county:**
-Merged from `ca_county_totals.csv` (see below). Available for all 58 counties, FY 2002–03 through FY 2023–24.
+Merged from `ca_county_totals.csv` (see below). Available for all 58 counties, FY 2002–03 through FY 2023–24. Includes total governmental expenditures, total public protection expenditures, and probation-only expenditures (see `ca_county_totals.csv` section for sourcing details).
 
 ### Known gaps
 
@@ -34,11 +34,40 @@ Merged from `ca_county_totals.csv` (see below). Available for all 58 counties, F
 
 1,276 rows (58 counties × 22 years, FY 2002–03 to 2023–24), one row per county per fiscal year.
 
+### Columns
+
+| Column | Description |
+|--------|-------------|
+| `fiscal_year` | Fiscal year ending calendar year (e.g., `2024` = FY 2023–24) |
+| `entity_name` | County name (or "San Francisco" via cities API) |
+| `total_governmental_expenditures` | Sum of governmental fund expenditures (see Categories below) |
+| `public_protection_expenditures` | Total Public Protection category (police, jails/detention, courts, fire, probation, protective inspection, flood control, other protection) |
+| `public_protection_pct` | `public_protection_expenditures / total_governmental_expenditures × 100` |
+| `probation_expenditures` | County probation-only expenditures, all funds. See "Probation extraction" below. |
+
 ### Source
 
 California State Controller's Office (SCO), via the ByTheNumbers open data portal (SODA API, dataset ID `uctr-c2j8`), derived from the annual *Counties Financial Transactions Report*. Coverage: all 57 reporting counties (excluding San Francisco) FY 2002–03 through FY 2023–24.
 
-San Francisco, as a consolidated city-county, reports to the Controller as a city. Its data is fetched separately from the SCO Cities API (dataset ID `mxbq-rk3r`) and merged in.
+San Francisco, as a consolidated city-county, reports to the Controller as a city. Its data is fetched separately from the SCO Cities API (dataset ID `ju3w-4gxp`) and merged in.
+
+### Probation extraction
+
+The SCO dataset breaks Public Protection into subcategories including a dedicated probation line, but the schema changed at FY 2017. The `probation_expenditures` column in this file is built from two API paths joined together:
+
+**Counties (57 counties, all funds):**
+- FY 2003 – 2016: `form_table='EXP_PUBLIC_PROTECTION'` with `subcategory_2` in `Probation_Operating Expenditures` and `Probation_Capital Outlay`. Two lines per county-year, summed.
+- FY 2017 – 2024: `form_table` in `GEN_PROBATION`, `SR_PROBATION`, `DEBT_PROBATION`, `CAPPROJ_PROBATION`, `PERM_PROBATION` (the five fund types: General, Special Revenue, Debt Service, Capital Projects, Permanent). Five lines per county-year, summed.
+
+**San Francisco (cities API, dataset `ju3w-4gxp`):**
+- FY 2003 – 2016: `form_table='EXP_PROBATION_PUB'`, line `Probation_Total Expenditures`.
+- FY 2017 – 2024: `form_table='CURR_EXP_PROBATION_PUB'`, line `Probation_Current Expenditures`.
+
+All 58 counties × 22 fiscal years = 1,276 county-year cells are populated. Statewide totals range from $0.91B (FY 2002–03) to $2.33B (FY 2023–24) in nominal dollars.
+
+**Caveats:**
+- SF post-2017 reports `Current Expenditures` (operating) only; capital is bundled elsewhere in the cities schema, so SF's post-2017 figure is slightly narrower in scope than other counties' all-funds totals. Pre-2017 SF reports `Total Expenditures`, which is comparable.
+- Pre-2017 county figures are operating + capital outlay only. Special revenue, debt service, and permanent fund probation activity (rare for probation departments) is captured in the post-2017 schema but not the pre-2017 schema. For most counties this is a negligible difference.
 
 ### Why governmental funds, not all funds
 
