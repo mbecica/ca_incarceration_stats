@@ -57,6 +57,7 @@ Definition: Institution/Camps + Department of State Hospitals (DSH). Excludes in
 
 **Probation (2003–2024):**
 - California Department of Justice, Criminal Justice Statistics Center (CJSC), Adult Probation Caseload Actions dataset, downloaded from OpenJustice (openjustice.doj.ca.gov). Statewide totals are the sum of all 58 counties' December ending caseloads for felony and misdemeanor probation. Covers traditional probation only — not PRCS or mandatory supervision.
+- *Manual correction (2016, 2017):* Yuba County's 2016 and 2017 figures in the OpenJustice source (totals of 26 and 28) appear to be a coding error — surrounding years are 188 (2015) and 538 (2018). Yuba 2016 and 2017 have been linearly interpolated to 305 and 421 respectively, and the statewide totals here incremented accordingly. Original 2016 total was 239,735 (now 240,014); original 2017 total was 233,046 (now 233,439). See `README_county.md` for details.
 
 **PRCS (2011–2025):**
 - 2013–2015: Chief Probation Officers of California (CPOC), *2015 California Probation Summary*, June 30 snapshots. Values: 2013 = 39,057; 2014 = 40,778; 2015 = 39,905.
