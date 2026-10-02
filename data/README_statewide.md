@@ -6,7 +6,7 @@ This directory contains two statewide CSV files covering California prison popul
 
 ## ca_statewide_prison_population.csv
 
-106 rows (1920–2025), one row per calendar year.
+106 rows (1920–2025), one row per calendar year. Includes year-end stock columns (prison/parole/probation/jail populations) and annual flow columns (prison and jail admissions, 2000+).
 
 ### Columns
 
@@ -26,6 +26,14 @@ This directory contains two statewide CSV files covering California prison popul
 | `mandatory_supervision` | Mandatory supervision population |
 | `jail_population` | Statewide total county jail population (2000–2024), summed across all reporting counties from `ca_county_incarceration.csv`. Sourced from the California Board of State and Community Corrections (BSCC) Jail Profile Survey. 57 counties report through 2015; 56 counties from 2016–2023; 54 counties in 2024. The 2024 figure is a slight undercount due to missing counties. |
 | `jail_population_source` | Source citation for the jail population figure. |
+| `prison_admissions` | Annual statewide prison admissions (2000–2019), summed across counties of commitment from `ca_county_incarceration.csv`. Counts events (admissions), not unique persons — one person admitted multiple times in a year counts each time. Vera stopped reporting county-level prison data after 2019, so 2020+ is blank pending a BJS NPS or CDCR backfill. |
+| `prison_admissions_source` | Source citation for the prison admissions figure, including the count of reporting counties for that year. |
+| `jail_admissions` | Annual statewide jail bookings (2000–2024), summed across reporting counties from `ca_county_incarceration.csv`. Counts events (bookings), not unique persons. 2024 is a 54-of-58-county undercount; otherwise 56–58 counties report per year. |
+| `jail_admissions_source` | Source citation for the jail admissions figure, including the count of reporting counties for that year. |
+| `probation_placements` | Annual new placements on adult probation by court order (2003–2024), summed across all 58 counties and 12 months. Excludes reinstatements and other receipts. Counts events, not unique persons. |
+| `probation_terminations` | Annual successful terminations from adult probation (2003–2024). Excludes revocations and other removals. |
+| `probation_revocations` | Annual revocations from adult probation (2003–2024). |
+| `probation_actions_source` | Source citation for the three probation flow columns. |
 
 ### Sources by column
 
@@ -70,6 +78,23 @@ Definition: Institution/Camps + Department of State Hospitals (DSH). Excludes in
 - 2016: CPOC *2016 California Probation Summary*, June 30 snapshot. Value: 12,019.
 - 2017–2018: CPOC *2018 California Probation Summary*, June 30 snapshots. Values: 2017 = 12,519; 2018 = 12,178.
 - 2019–2023: Read from LAO visualizations.
+
+**Prison admissions (2000–2019):**
+- Aggregated from `ca_county_incarceration.csv` `total_prison_adm` column, originally from Vera Institute of Justice, *Incarceration Trends*. Vera's prison admissions are counts of new commitments to state prison by county of commitment. Vera discontinued the county-level prison series after 2019; 2020+ is blank pending a backfill from BJS National Prisoner Statistics or CDCR data.
+- AB 109 (Public Safety Realignment, Oct 2011) is visible in the series: admissions drop from 87,772 (2011) to 34,383 (2012) as lower-level offenders were redirected from state prison to county jail and community supervision.
+
+**Jail admissions (2000–2024):**
+- Aggregated from `ca_county_incarceration.csv` `total_jail_adm` column, originally from Vera Institute of Justice, *Incarceration Trends*, which compiles BSCC Jail Profile Survey data. 56–58 counties report per year; 2024 is a 54-county subset and is a slight undercount.
+
+**Probation placements, terminations, revocations (2003–2024):**
+- California Department of Justice, CJSC *Adult Probation Caseload Actions* dataset (`Adult_Probation_2003-2024.csv`, accessed June 2025 via OpenJustice data portal). The source file is monthly county-level data with separate columns for felony and misdemeanor placements, reinstatements, terminations, revocations, and other movements. The statewide annual columns are summed across all 58 counties and 12 months:
+  - `probation_placements` = `FEL_REC_COURT + MISD_REC_COURT` (new court orders only — excludes reinstatements and "other" receipts).
+  - `probation_terminations` = `FEL_RMVD_TERMINATED + MISD_RMVD_TERMINATED` (successful exits — excludes revocations and "other" removals).
+  - `probation_revocations` = `FEL_RMVD_REVOKED + MISD_RMVD_REVOKED`.
+- The raw source file is preserved in `data_sources/population/probation/`.
+- The Yuba 2016/2017 reporting issue documented for `total_probation` (ending caseload) affects the flow columns from the same source as well. Statewide flow counts here are uncorrected; the Yuba absolute error is small relative to the statewide totals (~80K–120K placements/year).
+
+**Important: admissions and placements count events, not unique people.** A single person admitted to jail five times in a year contributes five jail admissions; the same person placed on probation twice contributes two placements. These columns are not suitable for computing "how many distinct people have been incarcerated or supervised" without external information on the event-to-unique-person ratio (e.g., from CDCR recidivism reports or BJS reentry studies).
 
 ---
 
@@ -167,7 +192,7 @@ Bureau of Justice Statistics. (2001–2010). *Probation and parole in the United
 
 California Department of Corrections and Rehabilitation. (2014–2019). *CDCR data points* [Semi-annual PDF reports]. CDCR Office of Research.
 
-California Department of Corrections and Rehabilitation. (2024–2025). *Monthly report of population* (Tpop1d series). CDCR.
+California Department of Corrections and Rehabilitation. (2019–2025). *Monthly report of population* (Tpop1d series). CDCR Office of Research. https://www.cdcr.ca.gov/research/population-reports-2/ The PDFs, and monthly tables extracted from them, are kept in [cdcr_facility_data](https://github.com/mbecica/cdcr_facility_data).
 
 California Department of Justice, Criminal Justice Statistics Center. (2003–2024). *Adult probation caseload actions* [Dataset]. OpenJustice. https://openjustice.doj.ca.gov/data
 
